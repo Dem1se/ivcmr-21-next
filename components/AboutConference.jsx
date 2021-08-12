@@ -1,5 +1,5 @@
 import * as React from 'react'
-import styles from '../styles/aboutConference.module.css'
+import styles from '../styles/AboutConference.module.css'
 
 export default class AboutConference extends React.Component {
   render() {

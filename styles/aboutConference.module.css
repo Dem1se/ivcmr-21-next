@@ -4,13 +4,15 @@
 }
 
 .heading {
-    font-size: 1.5rem;
+    font-size: 2em;
     font-family: Oswald, Chivo, 'Segoe UI', sans-serif; 
     margin: 1%;
 }
 
 .content {
     text-align: justify;
+    font-size: 1.3em;
+    color: rgb(86, 93, 100);
     margin: 3%;
 }
 

@@ -1,18 +1,18 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 import AboutConference from '../components/AboutConference'
 import ImportandDates from '../components/ImportantDates'
 import SplashScreen from '../components/SplashScreen'
+import KeynoteSpeakers from '../components/KeynoteSpeakers'
+import TopicToBeCovered from '../components/TopicToBeCovered'
 
 /*
  *  Layout:
- *    ~-(need to add buttons) Welcome splash -> submit abstract, register now buttons
- *    -About the conference [text block]
- *    Keynote speakers [profile cards]
- *    -important dates [date cards]
- *    *insert something low density here*
+ *    🟨 (need to add buttons) Welcome splash -> submit abstract, register now buttons
+ *    ✅ About the conference [text block]
+ *    🟨 Keynote speakers [profile cards] -> clickable profile for more info on person/talk
+ *    ✅ important dates [date cards] -> could improve cards by adding logo
  *    topics to be covered
  *    downloads
  *    contacts
@@ -34,7 +34,9 @@ export default function Home() {
       <main className={styles.main}>
         <SplashScreen />
         <AboutConference />
+        <KeynoteSpeakers />
         <ImportandDates />
+        <TopicToBeCovered />
       </main>
 
       <footer className={styles.footer}>

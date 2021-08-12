@@ -1,0 +1,31 @@
+.container {
+    margin: 0;
+    width: 100%;
+    padding: 2.5% 15%;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+.heading {
+    font-size: 2em;
+    font-family: Oswald, Chivo, 'Segoe UI', sans-serif;
+    margin: 1%;
+}
+
+.list {
+    font-size: 1.5em;
+    margin: auto;
+    text-align: left;
+}
+
+.content {
+    color: rgb(50, 50, 50);
+    margin: 3%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.titleUnderline {
+    width: 75px;
+}
