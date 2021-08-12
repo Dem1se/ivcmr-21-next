@@ -1,0 +1,25 @@
+.container {
+    background-color: white;
+    padding: 2.5% 0;
+    width: 100%;
+}
+
+.heading {
+    text-align: center;
+    font-size: 2em;
+    font-family: Oswald, Chivo, 'Segoe UI', sans-serif;
+    margin: 1%;
+}
+
+.titleUnderline {
+    width: 75px;
+}
+
+.bottonContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3%;
+    justify-content: center;
+    margin: 3%;
+}
