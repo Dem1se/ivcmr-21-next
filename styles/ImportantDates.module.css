@@ -1,0 +1,22 @@
+.container {
+    padding: 2.5% 0;
+    width: 100%;
+}
+
+.heading {
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: Oswald, Chivo, 'Segoe UI', sans-serif;
+    margin: 1%;
+}
+
+.titleUnderline {
+    width: 75px;
+}
+
+.cardContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
