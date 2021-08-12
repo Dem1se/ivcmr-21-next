@@ -6,8 +6,10 @@ import SplashScreen from '../components/SplashScreen'
 import KeynoteSpeakers from '../components/KeynoteSpeakers'
 import TopicToBeCovered from '../components/TopicToBeCovered'
 import DownloadsSection from '../components/DownloadsSection'
+import ContactsFooter from '../components/ContactsFooter'
 
 /*
+ *  Note: Need to statically bundle the fonts with the site
  *  Layout:
  *    🟨 (need to add buttons) Welcome splash -> submit abstract, register now buttons
  *    ✅ About the conference [text block]
@@ -41,7 +43,7 @@ export default function Home() {
       </main>
 
       <footer className={styles.footer}>
-        Footer goes here
+        <ContactsFooter />
       </footer>
     </div>
   )

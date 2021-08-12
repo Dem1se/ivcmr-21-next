@@ -1,6 +1,9 @@
 .container {
     padding: 30px;
-    background: #f9f9fb;
+    /* background: #f9f9fb; */
+    /* background-color: #9ED8D5; */
+    /* background-color:rgb(255, 199, 199); */
+    background-color: rgb(233, 255, 249);
     height: 22vh;
     width: 20vw;
     min-height: 200px;
