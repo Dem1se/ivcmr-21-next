@@ -1,0 +1,78 @@
+.container {
+    animation-delay: 0ms;
+    animation-duration: 250ms;
+    animation-direction: normal;
+    animation-name: top-to-bottom;
+    
+    z-index: 1;
+    position: fixed;
+    visibility: visible;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 60px;
+    width: 100%;
+    justify-content: center;
+    gap: 10%;
+    background-color: rgba(0, 0, 0, .7);
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+.container:hover,
+.container:active,
+.container:focus {
+    transition: background 0.2s ease;
+    background: rgba(0, 0, 0, 1)
+}
+
+.container_hidden {
+    /* animation-delay: 0ms;
+    animation-duration: 250ms;
+    animation-direction: normal;
+    animation-name: bottom-to-top; */
+
+    z-index: 1;
+    position: fixed;
+    overflow: hidden;
+    display: none;
+    visibility: hidden;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 60px;
+    width: 100%;
+    justify-content: center;
+    gap: 10%;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.tab {
+    display: flex;
+    font-size: 1.5em;
+    text-align: center;
+    width: 70px;
+    height: 100%;
+    margin: 0;
+}
+
+.name {
+    transition: color 0.2s ease;
+    color: rgb(200, 200, 200);
+    margin: auto;
+    margin-bottom: 0.7em;
+}
+
+.name:hover, 
+.name:focus, 
+.name:active {
+    color: rgb(255, 255, 255);
+}
+
+@keyframes top-to-bottom {
+    from {top: -100%}
+    to {top: 0}
+}
+
+@keyframes bottom-to-top {
+    from {top: 0}
+    to {top: -100%}
+}
