@@ -3,7 +3,8 @@
     animation-duration: 250ms;
     animation-direction: normal;
     animation-name: top-to-bottom;
-    
+
+    transition: background 0.2s ease;
     z-index: 1;
     position: fixed;
     visibility: visible;

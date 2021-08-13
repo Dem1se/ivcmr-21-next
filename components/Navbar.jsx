@@ -12,7 +12,7 @@ export default class Navbar extends React.Component {
   }
   
   eventHandler = (ev) => {
-    if (window.pageYOffset > 100) {
+    if (window.pageYOffset != 0) {
       this.setState({
         NavbarStyle: styles.container,
       });
