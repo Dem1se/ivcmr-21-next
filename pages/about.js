@@ -3,7 +3,10 @@ import styles from '../styles/About.module.css'
 import ContactsFooter from '../components/ContactsFooter';
 import AboutDepartment from '../components/AboutDepartment';
 import AboutCollege from '../components/AboutCollege';
+import AboutChiefPatrons from '../components/AboutChiefPatrons';
+import AboutPatron from '../components/AboutPatron';
 import AboutAdvisoryCommittee from '../components/AboutAdvisoryCommittee';
+import OrganizingCommitte from '../components/OrganizingCommitte';
 
 export default function About() {
   return (
@@ -17,7 +20,10 @@ export default function About() {
         <div className={styles.spacer} />
         <AboutDepartment />
         <AboutCollege />
+        <AboutChiefPatrons />
+        <AboutPatron />
         <AboutAdvisoryCommittee />
+        <OrganizingCommitte />
       </main>
 
       <footer className={styles.footer}>

@@ -11,8 +11,8 @@ export default class SplashScreen extends React.Component {
             className={styles.image}
             layout='fill'
             objectFit='scale-down'
-            src="/eec-logo.png"
-            alt="College logo"
+            src="/eec-logo-500.png"
+            alt=""
           />
         </div>
         <p className={styles.welcomeTo}>Welcome to</p>

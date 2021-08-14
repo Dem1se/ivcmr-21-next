@@ -21,10 +21,10 @@ import ContactsFooter from '../components/ContactsFooter'
  * about page:
  *    ✅ about the college
  *    ✅ about the department
- *    chief patrons
+ *    ✅ chief patrons
  *    ✅ patrons
- *    advisory committee
- *    organizing committe
+ *    ✅ advisory committee
+ *    ✅ organizing committe
  */
 export default function Home() {
   return (
