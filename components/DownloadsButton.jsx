@@ -7,7 +7,6 @@ export default class DownloadButton extends React.Component {
 
   render() {
     return (
-      //  onClick={} passHref={true}
       <a href={this.props.link} download>
       <div className={styles.container}> 
         <div className={styles.icon}>

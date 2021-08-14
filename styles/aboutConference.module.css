@@ -19,3 +19,9 @@
 .titleUnderline {
     width: 75px;
 }
+
+.readMore {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
