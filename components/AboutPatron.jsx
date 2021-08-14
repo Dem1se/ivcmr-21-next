@@ -10,7 +10,7 @@ export default class AboutPatron extends React.Component {
         <table className={styles.table}>
           <tbody>
             <tr>
-              <td className={styles.tableNameCell}>Dr. R.S. Kumar</td>
+              <td className={styles.tableNameCell}>Dr. R. S. Kumar</td>
               <td className={styles.tableInfoCell}>Principal</td>
             </tr>
           </tbody>

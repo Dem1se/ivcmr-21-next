@@ -13,7 +13,8 @@ export default class Navbar extends React.Component {
 
   clickHandler = (tabID) => {
     this.setState({
-      CurrentTab: tabID
+      CurrentTab: tabID,
+      NavbarStyle: tabID == "home" ? styles.container_hidden : styles.container
     })
   }
 
@@ -28,8 +29,6 @@ export default class Navbar extends React.Component {
           NavbarStyle: styles.container_hidden,
         });
       }
-    } else {
-
     }
   }
 
@@ -54,17 +53,19 @@ export default class Navbar extends React.Component {
   render() {
     return (
       <div className={this.state.NavbarStyle} >
-        <div className={styles.logo} id="Logo">
-          <p className={styles.logoContent}>IVCMR-21</p>
-        </div>
+        <Link href="/" passHref={true}>
+          <div className={styles.logo} onClick={() => this.clickHandler("home")}>
+            <p className={styles.logoContent}>IVCMR-21</p>
+          </div>
+        </Link>
         {/* WE do this because of the navbar will be visible upon switch if we use next/link */}
         {/* eslint-disable-next-line @next/next/no-html-link-for-pages*/}
-        <a href="/">
+        <Link href="/" passHref={true}>
           <div className={styles.tab} onClick={() => this.clickHandler("home")}>
             <p className={styles.name}>Home</p>
             {this.state.CurrentTab == "home" ? <hr className={styles.dot} /> : <hr className={styles.dot_hidden} />}
           </div>
-        </a>
+        </Link>
         <Link href="/about" passHref={true}>
           <div
             className={styles.tab}

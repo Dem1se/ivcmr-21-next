@@ -23,6 +23,7 @@
 .name {
     color: rgb(50, 50, 50);
     width: 14em;
+    padding-left: .5em;
     /* To make the text unselectable */
     -webkit-user-select: none;
     -moz-user-select: none;

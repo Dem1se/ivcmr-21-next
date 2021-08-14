@@ -1,4 +1,9 @@
 .container {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
     animation-delay: 0ms;
     animation-duration: 250ms;
     animation-direction: normal;
@@ -20,6 +25,11 @@
 }
 
 .container_fixed {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
     z-index: 1;
     position: fixed;
     visibility: visible;
