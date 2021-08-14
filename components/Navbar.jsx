@@ -2,7 +2,6 @@ import * as React from 'react'
 import Link from 'next/link'
 import styles from '../styles/Navbar.module.css'
 
-// TODO need to make navbar show current tab in highlight
 export default class Navbar extends React.Component {
   constructor() {
     super()
@@ -18,7 +17,7 @@ export default class Navbar extends React.Component {
     })
   }
 
-  scrollHandler = (ev) => {
+  scrollHandler = () => {
     if (window.pageYOffset != 0) {
       this.setState({
         NavbarStyle: styles.container,
@@ -36,7 +35,6 @@ export default class Navbar extends React.Component {
       this.setState({ CurrentTab: "home" });
     } else {
       this.setState({ CurrentTab: window.location.href.split('/')[3] });
-
     }
   }
 
