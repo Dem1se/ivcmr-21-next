@@ -33,10 +33,8 @@ export default class AboutCollege extends React.Component {
               className={styles.image}
               layout='fill'
               objectFit='scale-down'
-              src="/eec-logo.png"
+              src="/eec-logo-1400.png"
               alt="College logo"
-            // width='426.72'
-            // height='360' 
             />
           </div>
         </div >

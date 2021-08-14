@@ -1,5 +1,5 @@
 import * as React from 'react'
-import styles from '../styles/AboutPatron.module.css'
+import styles from '../styles/AboutChiefPatrons.module.css'
 
 export default class AboutChiefPatrons extends React.Component {
   render() {

@@ -6,7 +6,7 @@ export default class DateCard extends React.Component {
     return (
       <div className={styles.container}>
         {/* add image or something nice to the card */}
-        <h3 className={styles.title}>{this.props.title}</h3>
+        <h3 className={styles.title}><i>{this.props.title}</i></h3>
         <p className={styles.date}>{this.props.date}</p>
       </div>
     );

@@ -24,17 +24,21 @@
 
 .title {
     text-align: center;
+    letter-spacing: .2px;
     color: #000;
-    font-size: 18px;
+    font-size: 1.5em;
+    font-family: "Crimson Text", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 35px 0 14px;
     min-height: 48px;
     font-weight: 600;
 }
 
 .date {
+    font-family: "Work Sans", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
+    font-size: 1.1em;
     margin-top: 0;
     margin-bottom: 1rem;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     font-weight: 500;
 }

@@ -9,9 +9,9 @@ export default class ImportandDates extends React.Component {
         <h4 className={styles.heading}>IMPORTANT DATES</h4>
         <hr className={styles.titleUnderline} />
         <div className={styles.cardContainer}>
-          <DateCard title="Abstract Submission" date="15 August 2021" />
-          <DateCard title="Communication of Acceptance" date="20 August 2021" />
-          <DateCard title="Registration & Submission Deadline" date="15 August 2021" />
+          <DateCard title="Abstract Submission" date={<p>15<sup>th</sup> August 2021</p>} />
+          <DateCard title="Communication of Acceptance" date={<p>20<sup>th</sup> August 2021</p>} />
+          <DateCard title="Registration & Submission Deadline" date={<p>25<sup>th</sup> August 2021</p>} />
         </div>
       </div>
     );
