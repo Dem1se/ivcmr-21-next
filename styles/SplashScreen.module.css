@@ -46,7 +46,7 @@
     color: white;
 }
 
-.imageBoxBox {
+.imageBox {
     border-radius: 20px;
     background-color: rgba(255, 255, 255, .7);
     position: absolute;
@@ -58,12 +58,6 @@
     width: 308px;
     /* height: 100px; */
     height: 108px;
-}
-
-.imageBox {
-    position: relative;
-    padding: 10px;
-    height: 100%;
 }
 
 .image {

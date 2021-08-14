@@ -3,6 +3,7 @@ import styles from '../styles/About.module.css'
 import ContactsFooter from '../components/ContactsFooter';
 import AboutDepartment from '../components/AboutDepartment';
 import AboutCollege from '../components/AboutCollege';
+import AboutAdvisoryCommittee from '../components/AboutAdvisoryCommittee';
 
 export default function About() {
   return (
@@ -16,6 +17,7 @@ export default function About() {
         <div className={styles.spacer} />
         <AboutDepartment />
         <AboutCollege />
+        <AboutAdvisoryCommittee />
       </main>
 
       <footer className={styles.footer}>

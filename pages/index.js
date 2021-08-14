@@ -11,10 +11,10 @@ import ContactsFooter from '../components/ContactsFooter'
 /*
  *  Note: Need to statically bundle the fonts with the site
  *  Layout:
- *    🟨 (need to add buttons) Welcome splash -> submit abstract, register now buttons
+ *    🟨 Welcome splash -> submit abstract, register now buttons
  *    ✅ About the conference [text block] -> add readmore button linking to about page
  *    🟨 Keynote speakers [profile cards] -> clickable profile for more info on person/talk
- *    ✅ important dates [date cards] -> could improve cards by adding logo
+ *    ✅ important dates [date cards] -> Improve design (font/typesetting)
  *    ✅ topics to be covered
  *    ✅ downloads
  *    ✅ contacts
@@ -22,7 +22,7 @@ import ContactsFooter from '../components/ContactsFooter'
  *    ✅ about the college
  *    ✅ about the department
  *    chief patrons
- *    patrons
+ *    ✅ patrons
  *    advisory committee
  *    organizing committe
  */

@@ -1,0 +1,39 @@
+.container {
+    padding: 2.5% 15%;
+    text-align: center;
+}
+
+.heading {
+    font-size: 2em;
+    font-family: Oswald, Chivo, 'Segoe UI', sans-serif; 
+    margin: 1%;
+}
+
+.table {
+    text-align: left;
+    font-size: 1.3em;
+    /* color: rgb(86, 93, 100); */
+    color: rgb(60, 65, 70);
+    margin: 3%;
+    width: 100%;
+}
+
+.tableRow {
+    
+}
+
+.tableNameCell {
+    color: rgb(31, 31, 31);
+    font-weight: 600;
+    height: 2em;
+    padding-left: 20%;
+    text-align: left;
+}
+
+.tableInfoCell {
+    padding-left: 5%;
+}
+
+.titleUnderline {
+    width: 75px;
+}

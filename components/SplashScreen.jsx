@@ -6,16 +6,14 @@ export default class SplashScreen extends React.Component {
   render() {
     return (
       <div className={styles.container}>
-        <div className={styles.imageBoxBox}>
-          <div className={styles.imageBox}>
-            <Image
-              className={styles.image}
-              layout='fill'
-              objectFit='scale-down'
-              src="/eec-logo.png"
-              alt="College logo"
-            />
-          </div>
+        <div className={styles.imageBox}>
+          <Image
+            className={styles.image}
+            layout='fill'
+            objectFit='scale-down'
+            src="/eec-logo.png"
+            alt="College logo"
+          />
         </div>
         <p className={styles.welcomeTo}>Welcome to</p>
         <p className={styles.eventName}>IVCMR - 2021</p>
