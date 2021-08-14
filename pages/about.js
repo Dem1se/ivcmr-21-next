@@ -3,6 +3,7 @@ import ContactsFooter from '../components/ContactsFooter';
 import styles from '../styles/About.module.css'
 import AboutDepartment from '../components/AboutDepartment';
 import AboutCollege from '../components/AboutCollege';
+import NavigateToHomeButton from '../components/NavigateToHomeSection';
 
 export default function About() {
   return (
@@ -13,8 +14,10 @@ export default function About() {
       </Head>
 
       <main className={styles.main}>
+        <NavigateToHomeButton />
         <AboutDepartment />
         <AboutCollege />
+        <NavigateToHomeButton />
       </main>
 
       <footer className={styles.footer}>

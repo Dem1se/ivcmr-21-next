@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import Layout from '../components/Layout'
 import AboutConference from '../components/AboutConference'
 import ImportandDates from '../components/ImportantDates'
 import SplashScreen from '../components/SplashScreen'
@@ -26,8 +25,6 @@ import ContactsFooter from '../components/ContactsFooter'
  *    patrons
  *    advisory committee
  *    organizing committe
- * schedule:
- *
  */
 export default function Home() {
   return (

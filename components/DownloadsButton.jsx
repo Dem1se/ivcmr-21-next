@@ -1,7 +1,6 @@
 import * as React from 'react'
 import Image from 'next/image'
 import styles from '../styles/DownloadsButton.module.css'
-import Link from 'next/link';
 
 export default class DownloadButton extends React.Component {
   
