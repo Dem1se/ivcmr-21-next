@@ -1,9 +1,8 @@
 import Head from 'next/head'
-import ContactsFooter from '../components/ContactsFooter';
 import styles from '../styles/About.module.css'
+import ContactsFooter from '../components/ContactsFooter';
 import AboutDepartment from '../components/AboutDepartment';
 import AboutCollege from '../components/AboutCollege';
-import NavigateToHomeButton from '../components/NavigateToHomeSection';
 
 export default function About() {
   return (
@@ -14,10 +13,9 @@ export default function About() {
       </Head>
 
       <main className={styles.main}>
-        <NavigateToHomeButton />
+        <div className={styles.spacer} />
         <AboutDepartment />
         <AboutCollege />
-        <NavigateToHomeButton />
       </main>
 
       <footer className={styles.footer}>
