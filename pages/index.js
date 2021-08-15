@@ -11,9 +11,9 @@ import ContactsFooter from '../components/ContactsFooter'
 /*
  *  Note: Need to statically bundle the fonts with the site
  *  Layout:
- *    🟨 Welcome splash ->        submit abstract, register now buttons
- *    🟨 About the conference ->  read more button
- *    🟨 Keynote speakers ->      clickable profile for more info on person/talk
+ *    🟨 Welcome splash -> submit abstract, register now buttons
+ *    ✅ About the conference
+ *    ✅ Keynote speakers
  *    ✅ important dates
  *    ✅ topics to be covered
  *    ✅ downloads
@@ -26,6 +26,7 @@ import ContactsFooter from '../components/ContactsFooter'
  *    ✅ advisory committee
  *    ✅ organizing committe
  */
+
 export default function Home() {
   return (
     <div className={styles.container}>
