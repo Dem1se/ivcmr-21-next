@@ -24,7 +24,7 @@ export default function Home() {
         <DownloadsSection />
       </main>
 
-      <footer className={styles.footer}>
+      <footer>
         <ContactsFooter />
       </footer>
     </div>

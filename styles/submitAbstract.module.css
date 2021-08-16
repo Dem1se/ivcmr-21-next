@@ -1,0 +1,42 @@
+.container {
+  min-height: 0px;
+  padding: 0 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.spacer {
+  height: 100px;
+}
+
+.text {
+  word-wrap: break-word;
+  text-align: justify;
+  font-size: 1.3em;
+  color: rgb(65, 65, 65);
+  margin: 3%;
+  margin-right: 0;
+  padding: 1% 30% 2%;
+  margin: 0;
+}
+
+.heading {
+  /* text-align: center; */
+  padding: 1% 30% 0;
+  width: 100%;
+  font-size: 2em;
+}
+
+.email {
+  color: #0070f3;
+  margin: 0;
+}
+
+.email:hover,
+.email:active,
+.email:focus {
+  text-decoration: underline;
+}

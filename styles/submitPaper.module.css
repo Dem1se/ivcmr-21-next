@@ -1,0 +1,13 @@
+.container {
+  min-height: 0px;
+  padding: 0 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.spacer {
+  height: 60px;
+}

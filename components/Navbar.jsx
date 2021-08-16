@@ -84,7 +84,7 @@ export default class Navbar extends React.Component {
         </div>
 
         <div className={styles.tab} >
-          <p className={styles.name_no_hover} onClick={() => this.clickHandler("about")}>Committee</p>
+          <p className={styles.name_no_hover}>Committee</p>
           {/* {this.state.CurrentTab == "about" ? <hr className={styles.dot} /> : <hr className={styles.dot_hidden} />} */}
           <div className={styles.dropdown_content}>
             <ul className={styles.dropdown_list}>
@@ -96,17 +96,28 @@ export default class Navbar extends React.Component {
 
         <div className={styles.tab}>
           <Link href="/#Downloads" passHref={true}>
-            <p className={styles.name} onClick={() => this.clickHandler("about")}>Downloads</p>
+            <p className={styles.name}>Downloads</p>
             {/* {this.state.CurrentTab == "about" ? <hr className={styles.dot} /> : <hr className={styles.dot_hidden} />} */}
           </Link>
         </div>
 
         <div className={styles.tab}>
-          <Link href="/#Contact" passHref={true}>
-            <p className={styles.name} onClick={() => this.clickHandler("about")}>Contact Us</p>
-            {/* {this.state.CurrentTab == "about" ? <hr className={styles.dot} /> : <hr className={styles.dot_hidden} />} */}
-          </Link>
+          <p className={styles.name_no_hover}>Submissions</p>
+          {/* {this.state.CurrentTab == "about" ? <hr className={styles.dot} /> : <hr className={styles.dot_hidden} />} */}
+          <div className={styles.dropdown_content}>
+            <ul className={styles.dropdown_list}>
+              <Link href="/submitAbstract" passHref={true}><li className={styles.dropdown_list_item}>Abstract Submission</li></Link>
+              <Link href="/submitPaper" passHref={true}><li className={styles.dropdown_list_item}>Full Paper Submission</li></Link>
+            </ul>
+          </div>
         </div>
+
+        {/* <div className={styles.tab}>
+          <Link href="/#Contact" passHref={true}>
+            <p className={styles.name}>Contact Us</p>
+            {this.state.CurrentTab == "about" ? <hr className={styles.dot} /> : <hr className={styles.dot_hidden} />}
+          </Link>
+        </div> */}
 
       </div>
     );

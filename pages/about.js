@@ -29,9 +29,10 @@ export default function About() {
         <OrganizingCommitte />
       </main>
 
-      <footer className={styles.footer}>
+      <footer>
         <ContactsFooter />
       </footer>
+
     </div>
   );
 }
