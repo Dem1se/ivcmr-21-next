@@ -24,10 +24,10 @@ export default class SpeakerCard extends React.Component {
     },
     content: {
       position: 'absolute',
-      top: '15%',
-      left: '30%',
-      right: '30%',
-      bottom: '15%',
+      top: '15vh',
+      left: '20vw',
+      right: '20vw',
+      bottom: '15vh',
       border: '1px solid #ccc',
       background: '#fff',
       overflow: 'auto',
@@ -65,6 +65,7 @@ export default class SpeakerCard extends React.Component {
           <div className={styles.cardBase}>
             <h4 className={styles.name}>{this.props.name}</h4>
             <p className={styles.time}>{this.props.time}</p>
+            <p className={styles.day}>{this.props.day}</p>
           </div>
 
 
@@ -99,7 +100,7 @@ export default class SpeakerCard extends React.Component {
               </div>
               <div className={styles.modalSection}>
                 <div className={styles.modalSectionTitle}>Timing</div>
-                <div className={styles.modalSectionContent}>{this.props.timing}</div>
+                <div className={styles.modalSectionContent}>{this.props.timing}<br/>{this.props.day}</div>
               </div>
             </div>
           </div>

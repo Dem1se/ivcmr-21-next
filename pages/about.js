@@ -13,7 +13,6 @@ export default function About() {
     <div className={styles.container}>
       <Head>
         <title>IVCMR-21 | About</title>
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>

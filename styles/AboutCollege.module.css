@@ -21,7 +21,7 @@
 .text {
     word-wrap: break-word;
     width: 60%;
-    text-align: right;
+    text-align: justify;
     font-size: 1.3em;
     color: rgb(86, 93, 100);
     margin: 0% 3%;
@@ -47,4 +47,9 @@
     vertical-align: middle;
     /* padding: 50px; */
     padding-top: 3%;
+}
+
+.no_split {
+    display: inline-block;
+    word-wrap: normal;
 }

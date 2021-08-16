@@ -8,7 +8,6 @@ export default class SplashScreen extends React.Component {
       <div className={styles.container}>
         <div className={styles.imageBox}>
           <Image
-            className={styles.image}
             layout='fill'
             objectFit='scale-down'
             src="/eec-logo-500.png"
@@ -17,7 +16,7 @@ export default class SplashScreen extends React.Component {
         </div>
         <p className={styles.welcomeTo}>Welcome to</p>
         <p className={styles.eventName}>IVCMR - 2021</p>
-        <p className={styles.fullForm}>INTERNATIONAL VIRTUAL CONFERENCE<br />ON MATERIAL RESEARCH</p>
+        <p className={styles.fullForm}>INTERNATIONAL VIRTUAL CONFERENCE<br />ON MATERIALS RESEARCH</p>
         <p className={styles.date}>AUGUST 26<sup>th</sup>-27<sup>th</sup>, 2021</p>
       </div>
     );

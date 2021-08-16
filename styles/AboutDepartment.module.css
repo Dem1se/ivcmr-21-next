@@ -20,7 +20,7 @@
 .text {
     word-wrap: break-word;
     width: 60%;
-    text-align: left;
+    text-align: justify;
     font-size: 1.3em;
     color: rgb(86, 93, 100);
     margin: 3%;

@@ -15,8 +15,6 @@ export default class AboutDepartment extends React.Component {
               objectFit='scale-down'
               src="/PHY_DEPT.jpg"
               alt="The physics department faculty"
-              // width='426.72'
-              // height='360' 
               />
           </div>
           <p className={styles.text}>
