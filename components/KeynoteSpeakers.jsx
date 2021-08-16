@@ -5,7 +5,7 @@ import SpeakerCard from './SpeakerCard'
 export default class KeynoteSpeakers extends React.Component {
   render() {
     return (
-      <div className={styles.container}>
+      <div className={styles.container} id="KeynoteSpeakers">
         <h4 className={styles.heading}>KEYNOTE SPEAKERS</h4>
         <hr className={styles.titleUnderline} />
         <div className={styles.cardContainer}>

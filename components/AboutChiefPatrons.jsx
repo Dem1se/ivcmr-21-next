@@ -4,7 +4,7 @@ import styles from '../styles/AboutChiefPatrons.module.css'
 export default class AboutChiefPatrons extends React.Component {
   render() {
     return (
-      <div className={styles.container}>
+      <div className={styles.container} id="AboutChiefPatrons">
         <h4 className={styles.heading}>CHIEF PATRONS</h4>
         <hr className={styles.titleUnderline} />
         <table className={styles.table}>

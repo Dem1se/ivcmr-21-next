@@ -5,7 +5,7 @@ import DateCard from './DateCard'
 export default class ImportandDates extends React.Component {
   render() {
     return (
-      <div className={styles.container}>
+      <div className={styles.container} id="ImportantDates">
         <h4 className={styles.heading}>IMPORTANT DATES</h4>
         <hr className={styles.titleUnderline} />
         <div className={styles.cardContainer}>

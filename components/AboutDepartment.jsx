@@ -4,7 +4,7 @@ import styles from '../styles/AboutDepartment.module.css'
 export default class AboutDepartment extends React.Component {
   render() {
     return (
-      <div className={styles.container}>
+      <div className={styles.container} id="AboutDepartment">
         <h4 className={styles.heading}>ABOUT THE DEPARTMENT</h4>
         <hr className={styles.titleUnderline} />
         <div className={styles.contentBox}>

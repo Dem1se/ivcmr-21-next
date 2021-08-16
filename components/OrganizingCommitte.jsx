@@ -4,7 +4,7 @@ import styles from '../styles/OrganizingCommitte.module.css'
 export default class OrganizingCommitte extends React.Component {
   render() {
     return (
-      <div className={styles.container}>
+      <div className={styles.container} id="AboutOrganizingCommittee">
         <h4 className={styles.heading}>ORGANIZING COMMITTEE</h4>
         <hr className={styles.titleUnderline} />
         <table className={styles.table}>

@@ -5,7 +5,7 @@ import DownloadButton from './DownloadsButton';
 export default class DownloadsSection extends React.Component {
   render() {
     return (
-      <div className={styles.container}>
+      <div className={styles.container} id="Downloads">
         <h4 className={styles.heading}>DOWNLOADS</h4>
         <hr className={styles.titleUnderline} />
         <div className={styles.bottonContainer}>

@@ -7,7 +7,7 @@ export default class ReadMoreButton extends React.Component {
     return (
       <div className={styles.container}>
         {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
-        <a href="/about">
+        <a href={this.props.href}>
           <div className={styles.content}>
             <p className={styles.label}>READ MORE</p>
             <div className={styles.icon}>

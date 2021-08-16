@@ -4,7 +4,7 @@ import styles from '../styles/AboutAdvisoryCommittee.module.css'
 export default class AboutAdvisoryCommittee extends React.Component {
   render() {
     return (
-      <div className={styles.container}>
+      <div className={styles.container} id="AdvisoryCommittee">
         <h4 className={styles.heading}>ADVISORY COMMITTEE</h4>
         <hr className={styles.titleUnderline} />
         <table className={styles.table}>

@@ -4,7 +4,7 @@ import styles from '../styles/AboutPatron.module.css'
 export default class AboutPatron extends React.Component {
   render() {
     return (
-      <div className={styles.container}>
+      <div className={styles.container} id="AboutPatron">
         <h4 className={styles.heading}>PATRONS</h4>
         <hr className={styles.titleUnderline} />
         <table className={styles.table}>

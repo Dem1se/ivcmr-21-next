@@ -19,7 +19,7 @@ export default class Navbar extends React.Component {
   }
 
   scrollHandler = () => {
-    if (window.location.href.split('/')[3] == "") {
+    if (window.location.pathname == "/") {
       if (window.pageYOffset != 0) {
         this.setState({
           NavbarStyle: styles.container,
@@ -34,13 +34,13 @@ export default class Navbar extends React.Component {
 
   componentDidMount() {
     addEventListener('scroll', this.scrollHandler);
-    if (window.location.href.split('/')[3] == "") {
+    if (window.location.pathname == "/") {
       this.setState({
         CurrentTab: "home"
       });
     } else {
       this.setState({
-        CurrentTab: window.location.href.split('/')[3],
+        CurrentTab: window.location.pathname.split("/")[1],
         NavbarStyle: styles.container_fixed
       });
     }
@@ -52,13 +52,12 @@ export default class Navbar extends React.Component {
 
   render() {
     return (
-      <div className={this.state.NavbarStyle} >
+      <div className={this.state.NavbarStyle}>
         <Link href="/" passHref={true}>
           <div className={styles.logo} onClick={() => this.clickHandler("home")}>
             <p className={styles.logoContent}>IVCMR-21</p>
           </div>
         </Link>
-        {/* WE do this because of the navbar will be visible upon switch if we use next/link */}
         {/* eslint-disable-next-line @next/next/no-html-link-for-pages*/}
         <Link href="/" passHref={true}>
           <div className={styles.tab} onClick={() => this.clickHandler("home")}>
@@ -74,7 +73,6 @@ export default class Navbar extends React.Component {
             {this.state.CurrentTab == "about" ? <hr className={styles.dot} /> : <hr className={styles.dot_hidden} />}
           </div>
         </Link>
-
       </div>
     );
   }

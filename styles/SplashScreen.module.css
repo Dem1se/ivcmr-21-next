@@ -9,6 +9,8 @@
     align-items: flex-start;
     background-image: url('../public/splash-bg.png');
     background-repeat: no-repeat;
+    background-size:cover;
+    background-color: #303030;
     /* To make the text unselectable */
     -webkit-user-select: none;
     -moz-user-select: none;
