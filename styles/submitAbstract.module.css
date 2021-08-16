@@ -15,7 +15,7 @@
 .text {
   word-wrap: break-word;
   text-align: justify;
-  font-size: 1.3em;
+  font-size: 1.4em;
   color: rgb(65, 65, 65);
   margin: 3%;
   margin-right: 0;
@@ -39,4 +39,30 @@
 .email:active,
 .email:focus {
   text-decoration: underline;
+}
+
+.contact {
+  font-size: 1em;
+}
+
+.table {
+  text-align: left;
+  font-size: 1em;
+  color: rgb(60, 65, 70);
+  margin: 3%;
+  width: 100%;
+}
+
+.tableNameCell {
+  width: 50%;
+  color: rgb(31, 31, 31);
+  font-weight: 600;
+  height: 2em;
+  /* padding-left: 20%; */
+  text-align: left;
+}
+
+.tableInfoCell {
+  width: 50%;
+  padding-left: 5%;
 }

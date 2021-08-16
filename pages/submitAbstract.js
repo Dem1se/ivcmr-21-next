@@ -16,35 +16,48 @@ export default function submitAbstract() {
         </div>
         <div className={styles.text}>
           Authors willing to present their research work can submit
-          a soft copy of their abstract in under <b>300 words</b>. <br />
-
+          a <b>soft copy</b> of their abstract in under <b>300 words</b>.
           Research work will be accepted based on the recommendation
-          of the panel of referees. Scrutinized and accepted papers will
-          be published in proceedings with ISBN number. The full
+          of the panel of referees. Scrutinized and accepted papers <b>will be
+            published</b> in proceedings with ISBN number. The full
           paper must be submitted to the convener within the deadline.
         </div>
         <div className={styles.heading}>
           Formatting Guidelines
         </div>
         <div className={styles.text}>
-          <ul>
-            <li>Times New Roman</li>
-            <li>12 pt font size</li>
-            <li>A4 paper</li>
-            <li>Not more than 300 words</li>
-          </ul>
+          <table className={styles.table}>
+            <tbody>
+              <tr>
+                <td className={styles.tableNameCell}>Font</td>
+                <td className={styles.tableInfoCell}>Times New Roman</td>
+              </tr>
+              <tr>
+                <td className={styles.tableNameCell}>Font Size</td>
+                <td className={styles.tableInfoCell}>12pt</td>
+              </tr>
+              <tr>
+                <td className={styles.tableNameCell}>Paper Size</td>
+                <td className={styles.tableInfoCell}>A4</td>
+              </tr>
+              <tr>
+                <td className={styles.tableNameCell}>Word Limit</td>
+                <td className={styles.tableInfoCell}>300 words</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
         <div className={styles.heading}>
           Submit Through
         </div>
         <div className={styles.text}>
           <ul>
-            <li>
+            <li className={styles.contact}>
               Sending {' '}
               <a className={styles.email} href="mailto:eec.ivcmr21@gmail.com">eec.ivcmr21@gmail.com</a>
               {' '} an email.
             </li>
-            <li>
+            <li className={styles.contact}>
               Filling {' '}
               {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
               <a className={styles.email} href="/">this Google form</a>.
