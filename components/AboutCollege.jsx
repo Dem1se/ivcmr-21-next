@@ -11,7 +11,7 @@ export default class AboutCollege extends React.Component {
         <hr className={styles.titleUnderline} />
         <div className={styles.contentBox}>
           <div className={styles.text}>
-            <p className={styles.content}>
+            <div className={styles.content}>
               <b>Easwari Engineering College</b>, Autonomus From 2019, a unit of SRM Group of Educational Institutions
               for higher learning is functioning under "Valliammai Society".
               The society was founded in the year 1975, for promoting the cause of
@@ -19,7 +19,7 @@ export default class AboutCollege extends React.Component {
               EEC was instituted in the academic year <div className={styles.no_split}>1996-1997</div>, with the Approval of AICTE,
               New Delhi. The college is affiliated to Anna University, Chennai, since 2002.
               The programes have been accreditated by NAAC / NBA and are periodically reviewed.
-            </p>
+            </div>
 
             <p className={styles.content}>
               The College offers eleven Under-Graduate and six Post-Graduate Programmes

@@ -14,8 +14,9 @@ export default class Navbar extends React.Component {
   clickHandler = (tabID) => {
     this.setState({
       CurrentTab: tabID,
-      NavbarStyle: tabID == "home" ? styles.container_hidden : styles.container
-    })
+      // NavbarStyle: tabID == "home" ? styles.container_hidden : styles.container
+      NavbarStyle: styles.container
+    });
   }
 
   scrollHandler = () => {
@@ -29,6 +30,8 @@ export default class Navbar extends React.Component {
           NavbarStyle: styles.container_hidden,
         });
       }
+    } else {
+      // just stay in fixed style
     }
   }
 
@@ -53,26 +56,58 @@ export default class Navbar extends React.Component {
   render() {
     return (
       <div className={this.state.NavbarStyle}>
+
         <Link href="/" passHref={true}>
           <div className={styles.logo} onClick={() => this.clickHandler("home")}>
             <p className={styles.logoContent}>IVCMR-21</p>
           </div>
         </Link>
-        {/* eslint-disable-next-line @next/next/no-html-link-for-pages*/}
-        <Link href="/" passHref={true}>
-          <div className={styles.tab} onClick={() => this.clickHandler("home")}>
+
+        <div className={styles.tab} onClick={() => this.clickHandler("home")}>
+          <Link href="/" passHref={true}>
             <p className={styles.name}>Home</p>
-            {this.state.CurrentTab == "home" ? <hr className={styles.dot} /> : <hr className={styles.dot_hidden} />}
+          </Link>
+          {/* {this.state.CurrentTab == "home" ? <hr className={styles.dot} /> : <hr className={styles.dot_hidden} />} */}
+        </div>
+
+        <div className={styles.tab} >
+          <Link href="/about" passHref={true}>
+            <p className={styles.name} onClick={() => this.clickHandler("about")}>About</p>
+          </Link>
+          {/* {this.state.CurrentTab == "about" ? <hr className={styles.dot} /> : <hr className={styles.dot_hidden} />} */}
+          <div className={styles.dropdown_content}>
+            <ul className={styles.dropdown_list}>
+              <Link href="/#AboutConference" passHref={true}><li className={styles.dropdown_list_item}>About Conference</li></Link>
+              <Link href="/about#AboutCollege" passHref={true}><li className={styles.dropdown_list_item}>About College</li></Link>
+            </ul>
           </div>
-        </Link>
-        <Link href="/about" passHref={true}>
-          <div
-            className={styles.tab}
-            onClick={() => this.clickHandler("about")}>
-            <p className={styles.name}>About</p>
-            {this.state.CurrentTab == "about" ? <hr className={styles.dot} /> : <hr className={styles.dot_hidden} />}
+        </div>
+
+        <div className={styles.tab} >
+          <p className={styles.name_no_hover} onClick={() => this.clickHandler("about")}>Committee</p>
+          {/* {this.state.CurrentTab == "about" ? <hr className={styles.dot} /> : <hr className={styles.dot_hidden} />} */}
+          <div className={styles.dropdown_content}>
+            <ul className={styles.dropdown_list}>
+              <Link href="/about#AdvisoryCommittee" passHref={true}><li className={styles.dropdown_list_item}>Advisory Committee</li></Link>
+              <Link href="/about#ChiefOrganizingCommittee" passHref={true}><li className={styles.dropdown_list_item}>Organizing Committee</li></Link>
+            </ul>
           </div>
-        </Link>
+        </div>
+
+        <div className={styles.tab}>
+          <Link href="/#Downloads" passHref={true}>
+            <p className={styles.name} onClick={() => this.clickHandler("about")}>Downloads</p>
+            {/* {this.state.CurrentTab == "about" ? <hr className={styles.dot} /> : <hr className={styles.dot_hidden} />} */}
+          </Link>
+        </div>
+
+        <div className={styles.tab}>
+          <Link href="/#Contact" passHref={true}>
+            <p className={styles.name} onClick={() => this.clickHandler("about")}>Contact Us</p>
+            {/* {this.state.CurrentTab == "about" ? <hr className={styles.dot} /> : <hr className={styles.dot_hidden} />} */}
+          </Link>
+        </div>
+
       </div>
     );
   }

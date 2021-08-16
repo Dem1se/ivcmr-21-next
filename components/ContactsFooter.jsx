@@ -5,7 +5,7 @@ import styles from '../styles/ContactsFooter.module.css'
 export default class ContactsFooter extends React.Component {
   render() {
     return (
-      <div className={styles.container}>
+      <div className={styles.container} id="Contact">
         <div className={styles.headingContainer}>
           <h3 className={styles.heading1}>Address For Correspondence</h3>
           <h3 className={styles.heading2}>Contact Us</h3>
