@@ -6,6 +6,8 @@ import AboutCollege from '../components/AboutCollege';
 import AboutChiefPatrons from '../components/AboutChiefPatrons';
 import AboutPatron from '../components/AboutPatron';
 import AboutAdvisoryCommittee from '../components/AboutAdvisoryCommittee';
+import AboutConvener from '../components/AboutConvener';
+import ChiefOrganizingCommittee from '../components/AboutChiefOrganizingCommittee';
 import OrganizingCommitte from '../components/OrganizingCommitte';
 
 export default function About() {
@@ -22,6 +24,8 @@ export default function About() {
         <AboutChiefPatrons />
         <AboutPatron />
         <AboutAdvisoryCommittee />
+        <AboutConvener />
+        <ChiefOrganizingCommittee />
         <OrganizingCommitte />
       </main>
 
