@@ -57,11 +57,6 @@ export default function submitAbstract() {
               <a className={styles.email} href="mailto:eec.ivcmr21@gmail.com">eec.ivcmr21@gmail.com</a>
               {' '} an email.
             </li>
-            <li className={styles.contact}>
-              Filling {' '}
-              {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
-              <a className={styles.email} href="/">this Google form</a>.
-            </li>
           </ul>
         </div>
       </main>

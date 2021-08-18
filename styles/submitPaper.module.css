@@ -9,5 +9,61 @@
 }
 
 .spacer {
-  height: 60px;
+  height: 100px;
+}
+
+.text {
+  word-wrap: break-word;
+  text-align: justify;
+  font-size: 1.4em;
+  color: rgb(65, 65, 65);
+  margin: 3%;
+  margin-right: 0;
+  padding: 1% 30% 2%;
+  margin: 0;
+}
+
+.heading {
+  /* text-align: center; */
+  padding: 1% 30% 0;
+  width: 100%;
+  font-size: 2em;
+}
+
+.email {
+  display: inline;
+  color: #0070f3;
+  margin: 0;
+}
+
+.email:hover,
+.email:active,
+.email:focus {
+  text-decoration: underline;
+}
+
+.contact {
+  font-size: 1em;
+}
+
+.table {
+  text-align: left;
+  font-size: 1em;
+  color: rgb(60, 65, 70);
+  margin: 3%;
+  width: 100%;
+}
+
+.tableNameCell {
+  width: 50%;
+  color: rgb(31, 31, 31);
+  font-weight: 600;
+  height: 2em;
+  /* padding-left: 20%; */
+  text-align: left;
+}
+
+.tableInfoCell {
+  width: 50%;
+  padding-left: 5%;
 }
