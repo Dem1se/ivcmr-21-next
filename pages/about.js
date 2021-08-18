@@ -15,6 +15,7 @@ export default function About() {
     <div className={styles.container}>
       <Head>
         <title>IVCMR-21 | About</title>
+        <meta name="description" content="Learn more about institute and people behind IVCMR-21" />
       </Head>
 
       <main className={styles.main}>

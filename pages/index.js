@@ -13,6 +13,7 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>IVCMR-21</title>
+        <meta name="description" content="The Official Website of IVCMR-21 Conference." />
       </Head>
 
       <main className={styles.main}>

@@ -7,7 +7,7 @@
     height: 100vh;
     padding-left: 5vh;
     align-items: flex-start;
-    background-image: url('../public/splash-bg.png');
+    background-image: url('../public/splash-bg.webp');
     background-repeat: no-repeat;
     background-size:cover;
     background-color: #303030;
