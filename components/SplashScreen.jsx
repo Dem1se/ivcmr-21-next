@@ -10,7 +10,7 @@ export default class SplashScreen extends React.Component {
           <Image
             layout='fill'
             objectFit='scale-down'
-            src="/eec-logo-500.png"
+            src="/eec-logo-500.webp"
             alt=""
           />
         </div>
