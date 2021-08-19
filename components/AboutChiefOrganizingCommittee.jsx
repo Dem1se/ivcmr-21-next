@@ -10,12 +10,12 @@ export default class ChiefOrganizingCommittee extends React.Component {
         <table className={styles.table}>
           <tbody>
             <tr>
-              <td className={styles.tableNameCell}>Mrs. C. Manjula</td>
-              <td className={styles.tableInfoCell}>Assistant Professor</td>
-            </tr>
-            <tr>
               <td className={styles.tableNameCell}>Dr. K. Raju</td>
               <td className={styles.tableInfoCell}>Associate Professor</td>
+            </tr>
+            <tr>
+              <td className={styles.tableNameCell}>Mrs. C. Manjula</td>
+              <td className={styles.tableInfoCell}>Assistant Professor</td>
             </tr>
           </tbody>
         </table>
