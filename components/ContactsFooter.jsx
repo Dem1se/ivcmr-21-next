@@ -66,6 +66,7 @@ export default class ContactsFooter extends React.Component {
             </div>
           </div >
         </div>
+        <p className={styles.credit}>Developed by <a href="https://github.com/dem1se">Dem1se</a></p>
       </div >
     );
   }
