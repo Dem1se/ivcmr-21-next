@@ -10,7 +10,11 @@ export default class DownloadsSection extends React.Component {
         <hr className={styles.titleUnderline} />
         <div className={styles.bottonContainer}>
           <DownloadButton name="Download Brochure" link="/IVCMR_21_BROCHURE.pdf" />
-          <DownloadButton name="Download Schedule" link="IVCMR_21_SCHEDULE.pdf" />
+          <DownloadButton name="Download Schedule" link="/IVCMR_21_SCHEDULE.pdf" />
+          <DownloadButton name="Download Book of Abstracts" link="/IVCMR_21_BOOK_OF_ABSTRACTS.pdf" />
+          {/* <DownloadButton name={<>Download<br /> Brochure</>} link="/IVCMR_21_BROCHURE.pdf" />
+          <DownloadButton name={<>Download<br /> Schedule</>} link="IVCMR_21_SCHEDULE.pdf" />
+          <DownloadButton name={<>Download<br />Book of Abstracts</>} link="IVCMR_21_BOOK_OF_ABSTRACTS.pdf" /> */}
         </div>
       </div>
     );
