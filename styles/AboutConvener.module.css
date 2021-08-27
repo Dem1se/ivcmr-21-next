@@ -2,11 +2,16 @@
     background-color: #f0f0f0;
     padding: 2.5% 15%;
     text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
 }
 
 .heading {
     font-size: 2em;
-    font-family: Oswald, Chivo, 'Segoe UI', sans-serif; 
+    font-family: Oswald, Chivo, 'Segoe UI', sans-serif;
     margin: 1%;
 }
 
@@ -22,16 +27,40 @@
     color: rgb(31, 31, 31);
     font-weight: 600;
     height: 2em;
-    padding-left: 20%;
+    padding-left: 23%; 
     width: 50%;
     text-align: left;
 }
 
 .tableInfoCell {
     width: 50%;
-    padding-left: 5%;
+    padding-left: 8%;
 }
 
 .titleUnderline {
     width: 75px;
+}
+
+.imageBox {
+    display: block;
+    align-items: center;
+    /* max-width: 1280px;
+    max-height: 885px;
+    min-width: 470px;
+    min-height: 320px; */
+    padding-top: 3%;
+}
+
+.imageCaption {
+    max-width: 500px;
+    margin-top: 1em;
+    color: rgb(85, 84, 84)
+}
+
+.imageCaption a {
+  color: #0070f3;
+}
+
+.imageCaption a:hover {
+    text-decoration: underline;
 }
