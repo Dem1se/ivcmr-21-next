@@ -1,7 +1,4 @@
 .container {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
     user-select: none;
     animation-delay: 0ms;
     animation-duration: 250ms;
@@ -17,15 +14,11 @@
     height: 60px;
     width: 100%;
     justify-content: center;
-    /* gap: 1%; */
     background-color: rgba(0, 0, 0, .7);
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
 .container_fixed {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
     user-select: none;
     z-index: 1;
     position: fixed;
@@ -36,34 +29,18 @@
     height: 60px;
     width: 100%;
     justify-content: center;
-    /* gap: 1%; */
     background-color: rgba(0, 0, 0, .7);
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
-.container_fixed:hover, .container_fixed:active, .container_fixed:focus {
-    transition: background 0.2s ease;
-    background: rgba(0, 0, 0, 1)
-}
-
-.container:hover, .container:active, .container:focus {
+.container:hover, .container:active, .container:focus, .container_fixed:hover, .container_fixed:active, .container_fixed:focus {
     transition: background 0.2s ease;
     background: rgba(0, 0, 0, 1)
 }
 
 .container_hidden {
-    z-index: 1;
-    position: fixed;
-    overflow: hidden;
     display: none;
     visibility: hidden;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    height: 60px;
-    width: 100%;
-    justify-content: center;
-    gap: 10%;
-    background-color: rgba(0, 0, 0, .6);
 }
 
 .tab {
@@ -142,116 +119,12 @@
     color: white;
 }
 
-.dot {
-    margin: auto 0;
-    margin-top: 0;
-    width: 15px;
-    height: 3px;
-    color: white;
-    background-color: white;
-    border-width: 0px;
-    border-radius: 3px;
-    align-self: center;
-}
-
-.dot_hidden {
-    visibility: hidden;
-    margin: auto 0;
-    margin-top: 0;
-    width: 15px;
-    height: 3px;
-    color: seashell;
-    background-color: seashell;
-    border-width: 0px;
-    border-radius: 3px;
-    align-self: center;
-}
-
-@keyframes top-to-bottom {
-    from {
-        top: -100%
-    }
-    to {
-        top: 0
-    }
-}
-
-@keyframes bottom-to-top {
-    from {
-        top: 0
-    }
-    to {
-        top: -100%
-    }
-}
-
 @media only screen and (min-width: 768px) {
     .container {
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-        animation-delay: 0ms;
-        animation-duration: 250ms;
-        animation-direction: normal;
-        animation-name: top-to-bottom;
-        transition: background 0.2s ease;
-        z-index: 1;
-        position: fixed;
-        visibility: visible;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        height: 60px;
-        width: 100%;
         justify-content: center;
-        /* gap: 1%; */
-        background-color: rgba(0, 0, 0, .7);
-        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
     }
     .container_fixed {
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-        z-index: 1;
-        position: fixed;
-        visibility: visible;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        height: 60px;
-        width: 100%;
         justify-content: center;
-        /* gap: 1%; */
-        background-color: rgba(0, 0, 0, .7);
-        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-    }
-    .container_fixed:hover, .container_fixed:active, .container_fixed:focus {
-        transition: background 0.2s ease;
-        background: rgba(0, 0, 0, 1)
-    }
-    .container:hover, .container:active, .container:focus {
-        transition: background 0.2s ease;
-        background: rgba(0, 0, 0, 1)
-    }
-    .container_hidden {
-        /* animation-delay: 0ms;
-    animation-duration: 250ms;
-    animation-direction: normal;
-    animation-name: bottom-to-top; */
-        z-index: 1;
-        position: fixed;
-        overflow: hidden;
-        display: none;
-        visibility: hidden;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        height: 60px;
-        width: 100%;
-        justify-content: center;
-        gap: 10%;
-        background-color: rgba(0, 0, 0, .6);
     }
     .tab {
         visibility: visible;
@@ -265,29 +138,6 @@
     }
     .tab:hover .dropdown_content {
         display: block;
-    }
-    .dropdown_content {
-        display: none;
-        position: absolute;
-        top: 100%;
-        background-color: rgba(30, 30, 30, 1);
-        min-width: 15rem;
-        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-        padding: 12px 16px;
-        z-index: 1;
-    }
-    .dropdown_list {
-        list-style-type: none;
-        padding: 0;
-        /* padding: .25rem 1.5rem; */
-    }
-    .dropdown_list_item {
-        font-size: 1.2em;
-        margin: .5rem 0;
-        width: 100%;
-    }
-    .dropdown_list_item:hover, .dropdown_list_item:active, .dropdown_list_item:focus {
-        color: white;
     }
     .logo {
         visibility: visible;
@@ -306,58 +156,31 @@
         transition: color 0.2s ease;
         margin: 0;
     }
-    .name {
-        padding: 0 1em;
-        font-size: 1.5em;
-        transition: color 0.2s ease;
-        margin: auto;
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 768px) {
+    .container {
+        justify-content: flex-end;
     }
-    .name_no_hover {
-        padding: 0 1em;
-        font-size: 1.5em;
-        transition: color 0.2s ease;
-        margin: auto;
+    .container_fixed {
+        justify-content: flex-end;
     }
-    .name:hover, .name:active, .name:hover {
-        color: white;
+}
+
+@keyframes top-to-bottom {
+    from {
+        top: -100%
     }
-    .dot {
-        margin: auto 0;
-        margin-top: 0;
-        width: 15px;
-        height: 3px;
-        color: white;
-        background-color: white;
-        border-width: 0px;
-        border-radius: 3px;
-        align-self: center;
+    to {
+        top: 0
     }
-    .dot_hidden {
-        visibility: hidden;
-        margin: auto 0;
-        margin-top: 0;
-        width: 15px;
-        height: 3px;
-        color: seashell;
-        background-color: seashell;
-        border-width: 0px;
-        border-radius: 3px;
-        align-self: center;
+}
+
+@keyframes bottom-to-top {
+    from {
+        top: 0
     }
-    @keyframes top-to-bottom {
-        from {
-            top: -100%
-        }
-        to {
-            top: 0
-        }
-    }
-    @keyframes bottom-to-top {
-        from {
-            top: 0
-        }
-        to {
-            top: -100%
-        }
+    to {
+        top: -100%
     }
 }
