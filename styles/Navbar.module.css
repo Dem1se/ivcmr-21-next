@@ -21,6 +21,7 @@
     background-color: rgba(0, 0, 0, .7);
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
+
 .container_fixed {
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -39,19 +40,18 @@
     background-color: rgba(0, 0, 0, .7);
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
+
 .container_fixed:hover, .container_fixed:active, .container_fixed:focus {
     transition: background 0.2s ease;
     background: rgba(0, 0, 0, 1)
 }
+
 .container:hover, .container:active, .container:focus {
     transition: background 0.2s ease;
     background: rgba(0, 0, 0, 1)
 }
+
 .container_hidden {
-    /* animation-delay: 0ms;
-animation-duration: 250ms;
-animation-direction: normal;
-animation-name: bottom-to-top; */
     z-index: 1;
     position: fixed;
     overflow: hidden;
@@ -65,7 +65,10 @@ animation-name: bottom-to-top; */
     gap: 10%;
     background-color: rgba(0, 0, 0, .6);
 }
+
 .tab {
+    display: none;
+    visibility: hidden;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -74,9 +77,11 @@ animation-name: bottom-to-top; */
     margin: 0;
     color: rgb(200, 200, 200);
 }
+
 .tab:hover .dropdown_content {
     display: block;
 }
+
 .dropdown_content {
     display: none;
     position: absolute;
@@ -87,43 +92,56 @@ animation-name: bottom-to-top; */
     padding: 12px 16px;
     z-index: 1;
 }
+
 .dropdown_list {
     list-style-type: none;
     padding: 0;
-    /* padding: .25rem 1.5rem; */
 }
+
 .dropdown_list_item {
     font-size: 1.2em;
     margin: .5rem 0;
     width: 100%;
 }
+
 .dropdown_list_item:hover, .dropdown_list_item:active, .dropdown_list_item:focus {
     color: white;
 }
+
 .logo {
-    visibility: hidden;
-    display: none;
+    visibility: visible;
+    position: absolute;
+    top: 10%;
+    font-family: Oswald, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ccffff;
+    text-align: center;
+    height: 100%;
 }
+
 .logoContent {
-    font-size: 1.5em;
+    font-size: 2em;
     transition: color 0.2s ease;
     margin: 0;
 }
+
 .name {
     padding: 0 1em;
     font-size: 1.5em;
     transition: color 0.2s ease;
     margin: auto;
 }
+
 .name_no_hover {
     padding: 0 1em;
     font-size: 1.5em;
     transition: color 0.2s ease;
     margin: auto;
 }
+
 .name:hover, .name:active, .name:hover {
     color: white;
 }
+
 .dot {
     margin: auto 0;
     margin-top: 0;
@@ -135,6 +153,7 @@ animation-name: bottom-to-top; */
     border-radius: 3px;
     align-self: center;
 }
+
 .dot_hidden {
     visibility: hidden;
     margin: auto 0;
@@ -147,6 +166,7 @@ animation-name: bottom-to-top; */
     border-radius: 3px;
     align-self: center;
 }
+
 @keyframes top-to-bottom {
     from {
         top: -100%
@@ -155,6 +175,7 @@ animation-name: bottom-to-top; */
         top: 0
     }
 }
+
 @keyframes bottom-to-top {
     from {
         top: 0
@@ -233,6 +254,7 @@ animation-name: bottom-to-top; */
         background-color: rgba(0, 0, 0, .6);
     }
     .tab {
+        visibility: visible;
         position: relative;
         display: flex;
         flex-direction: column;
