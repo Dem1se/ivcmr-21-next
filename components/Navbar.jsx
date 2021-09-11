@@ -67,14 +67,12 @@ export default class Navbar extends React.Component {
           <Link href="/" passHref={true}>
             <p className={styles.name}>Home</p>
           </Link>
-          {/* {this.state.CurrentTab == "home" ? <hr className={styles.dot} /> : <hr className={styles.dot_hidden} />} */}
         </div>
 
         <div className={styles.tab} >
           <Link href="/about" passHref={true}>
             <p className={styles.name} onClick={() => this.clickHandler("about")}>About</p>
           </Link>
-          {/* {this.state.CurrentTab == "about" ? <hr className={styles.dot} /> : <hr className={styles.dot_hidden} />} */}
           <div className={styles.dropdown_content}>
             <ul className={styles.dropdown_list}>
               <Link href="/#AboutConference" passHref={true}><li className={styles.dropdown_list_item}>About Conference</li></Link>
@@ -85,7 +83,6 @@ export default class Navbar extends React.Component {
 
         <div className={styles.tab} >
           <p className={styles.name_no_hover}>Committee</p>
-          {/* {this.state.CurrentTab == "about" ? <hr className={styles.dot} /> : <hr className={styles.dot_hidden} />} */}
           <div className={styles.dropdown_content}>
             <ul className={styles.dropdown_list}>
               <Link href="/about#AdvisoryCommittee" passHref={true}><li className={styles.dropdown_list_item}>Advisory Committee</li></Link>
@@ -97,13 +94,11 @@ export default class Navbar extends React.Component {
         <div className={styles.tab}>
           <Link href="/#Downloads" passHref={true}>
             <p className={styles.name}>Downloads</p>
-            {/* {this.state.CurrentTab == "about" ? <hr className={styles.dot} /> : <hr className={styles.dot_hidden} />} */}
           </Link>
         </div>
 
         <div className={styles.tab}>
           <p className={styles.name_no_hover}>Submissions</p>
-          {/* {this.state.CurrentTab == "about" ? <hr className={styles.dot} /> : <hr className={styles.dot_hidden} />} */}
           <div className={styles.dropdown_content}>
             <ul className={styles.dropdown_list}>
               <Link href="/submitAbstract" passHref={true}><li className={styles.dropdown_list_item}>Abstract Submission</li></Link>

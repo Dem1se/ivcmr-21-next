@@ -1,27 +1,49 @@
 .container {
-    padding: 2.5% 15%;
+    padding: 2.5em 1em;
     text-align: center;
 }
-
 .heading {
     font-size: 2em;
-    font-family: Oswald, Chivo, 'Segoe UI', sans-serif; 
+    font-family: Oswald, Chivo, 'Segoe UI', sans-serif;
     margin: 1%;
 }
-
 .content {
-    text-align: justify;
-    font-size: 1.3em;
+    text-align: left;
+    font-size: 1.1em;
     color: rgb(86, 93, 100);
-    margin: 3%;
+    margin: 1em;
 }
-
 .titleUnderline {
     width: 75px;
 }
-
 .readMore {
     display: flex;
     justify-content: center;
     width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+    .container {
+        padding: 3em 15%;
+        text-align: center;
+    }
+    .heading {
+        font-size: 2em;
+        font-family: Oswald, Chivo, 'Segoe UI', sans-serif;
+        margin: 1%;
+    }
+    .content {
+        text-align: justify;
+        font-size: 1.3em;
+        color: rgb(86, 93, 100);
+        margin: 3%;
+    }
+    .titleUnderline {
+        width: 75px;
+    }
+    .readMore {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
 }

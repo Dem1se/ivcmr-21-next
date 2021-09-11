@@ -1,7 +1,12 @@
+@media only screen and (max-width: 768px) {
+    .container {
+        margin: 1em;
+    }    
+}
+
 .container {
     width: 200px;
 }
-
 
 .content {
     display: flex;
