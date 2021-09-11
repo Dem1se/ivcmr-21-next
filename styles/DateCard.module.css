@@ -1,10 +1,7 @@
 .container {
     padding: 30px;
-    /* background: #f9f9fb; */
-    /* background-color: #9ED8D5; */
-    /* background-color:rgb(255, 199, 199); */
     background-color: rgb(233, 255, 249);
-    height: 22vh;
+    height: auto;
     width: 20vw;
     min-height: 200px;
     max-height: 300px;
@@ -15,12 +12,6 @@
     margin-top: 3%;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
 }
-
-/* .container:focus, 
-.container:hover, 
-.container:active {
-    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
-} */
 
 .title {
     text-align: center;
@@ -41,4 +32,40 @@
     margin-bottom: 1rem;
     letter-spacing: 2px;
     font-weight: 500;
+}
+
+@media only screen and (min-width: 768px) {
+    .container {
+        padding: 30px;
+        background-color: rgb(233, 255, 249);
+        height: auto;
+        width: 20vw;
+        min-height: 200px;
+        max-height: 300px;
+        min-width: 250px;
+        max-width: 350px;
+        margin: 2.5vw;
+        border-radius: 5%;
+        margin-top: 3%;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+    }
+    .title {
+        text-align: center;
+        letter-spacing: .2px;
+        color: #000;
+        font-size: 1.5em;
+        font-family: "Crimson Text", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 35px 0 14px;
+        min-height: 48px;
+        font-weight: 600;
+    }
+    .date {
+        font-family: "Work Sans", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+        font-size: 1.1em;
+        margin-top: 0;
+        margin-bottom: 1rem;
+        letter-spacing: 2px;
+        font-weight: 500;
+    }
 }

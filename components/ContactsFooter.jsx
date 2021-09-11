@@ -6,17 +6,17 @@ export default class ContactsFooter extends React.Component {
   render() {
     return (
       <div className={styles.container} id="Contact">
-        <div className={styles.headingContainer}>
+        <div className={styles.AddressSection}>
           <h3 className={styles.heading1}>Address For Correspondence</h3>
-          <h3 className={styles.heading2}>Contact Us</h3>
-        </div>
-        <div className={styles.content}>
           <div className={styles.address}>
             <b>Easwari Engineering College</b><br />
             Bharathi Salai, Ramapuram,<br />
             Chennai - 600 089,<br />
             Tamil Nadu, IN.
           </div>
+        </div>
+        <div className={styles.ContactsSection}>
+          <h3 className={styles.heading2}>Contact Us</h3>
           <div className={styles.contactInfo}>
             <div className={styles.contactRow}>
               <p className={styles.contactDetail}>044-4392 3028 </p>

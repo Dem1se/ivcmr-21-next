@@ -1,24 +1,8 @@
-/* .card {
-    display: flex;
-    flex-flow: column;
-    flex-wrap: wrap;
-    gap: 3em;
-
-    height: 30vh;
-    width: 15vw;
-    min-height: ;
-    min-width: ;
-    max-height: ;
-    max-width: ;
-
-    border-radius: 10px;
-} */
-
 .card {
     display: block;
     padding: 0px;
     background: #f9f9fb;
-    height: 500px;
+    height: auto;
     width: 300px;
     margin: 2.5vw;
     margin-top: 3%;
@@ -31,6 +15,8 @@
 }
 
 .imageBox {
+    visibility: hidden;
+    display: none;
     background-color: #cccccc;
     width: 100%;
     height: 67%;
@@ -43,7 +29,7 @@
 
 .cardBase {
     padding: 30px;
-    height: 166px;
+    height: auto;
     width: 100%
 }
 
@@ -67,7 +53,7 @@
 .day {
     text-align: center;
     margin: 0;
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
     letter-spacing: 1px;
     font-weight: 500;
 }
@@ -83,7 +69,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 2.5% 0;
+    padding: 2.5em 0;
 }
 
 .icon {
@@ -104,6 +90,16 @@
     user-select: none;
 }
 
+.modalContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    gap: 5%;
+    padding: 2.5% 0;
+    height: 80%;
+}
+
 .modalName {
     margin: 0;
     font-size: 2em;
@@ -118,15 +114,6 @@
     margin-bottom: 5%;
 }
 
-.modalContent {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: left;
-    gap: 5%;
-    padding: 2.5% 0;
-    height: 80%;
-}
 
 .modalSectionTitle {
     font-size: 1.5em;
@@ -136,4 +123,132 @@
 .modalSectionContent {
     font-size: 1.7em;
     margin-top: 0;
+}
+
+@media only screen and (min-width: 768px) {
+    .card {
+        display: block;
+        padding: 0px;
+        background: #f9f9fb;
+        height: 500px;
+        width: 300px;
+        margin: 2.5vw;
+        margin-top: 3%;
+        border-radius: 5%;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+    }
+    
+    .card:focus, .card:active, .card:hover {
+        box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+    }
+    
+    .imageBox {
+        visibility: visible;
+        display: block;
+        background-color: #cccccc;
+        width: 100%;
+        height: 67%;
+        border-radius: 5%;
+    }
+    
+    .image {
+        border-radius: 5%;
+    }
+    
+    .cardBase {
+        padding: 30px;
+        height: 166px;
+        width: 100%
+    }
+    
+    .name {
+        text-align: center;
+        color: #000;
+        font-size: 18px;
+        margin: 0;
+        font-weight: 600;
+    }
+    
+    .time {
+        text-align: center;
+        /* margin-bottom: 1rem; */
+        margin: 0;
+        margin-top: 1em;
+        letter-spacing: 1px;
+        font-weight: 500;
+    }
+    
+    .day {
+        text-align: center;
+        margin: 0;
+        margin-bottom: 1rem;
+        letter-spacing: 1px;
+        font-weight: 500;
+    }
+    
+    .modalTop {
+        padding: 3% 5%;
+        height: 100%;
+    }
+    
+    .modalHead {
+        min-height: 20%;
+        max-height: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 2.5em 0;
+    }
+    
+    .icon {
+        z-index: 2;
+        position: absolute;
+        right: 25px;
+        top: 25px;
+        margin: 0px;
+        padding: 0px;
+        width: 35px;
+        height: 35px;
+        /* background-color: rgb(30, 30, 30); */
+        align-items: baseline;
+        /* To make the text unselectable */
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    
+    .modalName {
+        margin: 0;
+        font-size: 2em;
+    }
+    
+    .modalOrg {
+        margin: 0;
+        font-size: 1.5em;
+    }
+    
+    .modalSection {
+        margin-bottom: 5%;
+    }
+    
+    .modalContent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+        gap: 5%;
+        padding: 2.5% 0;
+        height: 80%;
+    }
+    
+    .modalSectionTitle {
+        font-size: 1.5em;
+        font-weight: 300;
+    }
+    
+    .modalSectionContent {
+        font-size: 1.7em;
+        margin-top: 0;
+    }   
 }
